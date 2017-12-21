@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+	
+	<configuration>
+		<typeAliases>
+			<typeAlias alias="role" type="com.learn.chapter2.po.Role"/>
+		</typeAliases>
+		<environments default="devolement">
+			<environment id="devolement">
+				<transactionManager type="JDBC">
+					<property name="autoCommit" value="false"/>
+				</transactionManager>
+				<dataSource type="POOLED">
+					<property name="driver" value=""/>
+					<property name="" value=""/>
+					<property name="" value=""/>
+					<property name="" value=""/>
+				</dataSource>
+			</environment>
+		</environments>
+	</configuration>
